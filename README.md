@@ -28,3 +28,11 @@ Some additional things I ran into and changed:
   *  Cause2: Also possibly due to using old mopidy that used python2. Updated to newest mopidy which uses python3.7
   *  Fix: Make sure to copy the textbox div after the popup closes and use that in `mopidy.conf`
 
+# Play audio but disable video - HDMI
+No idea why this works, but it does
+1st switch HDMI off:
+`$ /opt/vc/bin/tvservice -o`
+Then switch it back on:
+`$ /opt/vc/bin/tvservice -p`
+
+For some reason, this will keep the video off, but still play audio
